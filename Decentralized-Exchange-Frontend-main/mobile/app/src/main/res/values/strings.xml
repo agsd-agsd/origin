@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BrokerFi</string>
+    <string name="welcome_text">Welcome to BrokerFi</string>
+    <string name="create_wallet">Create a Wallet</string>
+    <string name="import_wallet">Import existing wallet</string>
+    <string name="import_existing_wallet">Import existing wallet?</string>
+    <string name="description_text">Connecting you to the decentralized world</string>
+    <string name="use_secret_phrase">Using a Secret Recovery Phrase</string>
+    <string name="get_started">Get started</string>
+    <string name="broker">Get started</string> <string name="swap_main_title">Swap</string>
+    <string name="swap_main_subtitle">Swapping crypto is now easy and secure</string>
+    <string name="swap_from_label">From</string>
+    <string name="swap_to_label">To</string>
+    <string name="swap_amount_hint">Amount</string>
+    <string name="swap_estimated_amount_hint">Estimated Amount</string>
+    <string name="swap_arrow_content_description">Swap direction arrow</string>
+    <string name="swap_button_action">Swap</string>
+    <string name="swap_optimization_info_title">Allow BrokerFi to programmatically optimize your swaps to assist with:</string>
+    <string name="swap_optimization_lower_expenses">Lower your transaction expenses</string>
+    <string name="swap_optimization_decrease_errors">Decrease the chances of transaction errors</string>
+    <string name="swap_optimization_avoid_jammed">Avoid transactions from getting jammed</string>
+    <string name="swap_optimization_guard_front_running">Guard against front-running *</string>
+
+    <string name="swap_account_not_found_disabled">Account information not found. Swap disabled.</string>
+    <string name="swap_error_same_currency">Cannot swap the same currency.</string>
+    <string name="swap_exchange_rate_format_same">1 %1$s = 1 %2$s</string>
+    <string name="swap_exchange_rate_format_simulated">1 %1$s = %2$.2f %3$s (Simulated)</string>
+    <string name="swap_exchange_rate_unavailable">Exchange rate not available</string>
+    <string name="swap_amount_not_applicable">N/A</string>
+    <string name="swap_error_enter_amount">Please enter the amount to swap.</string>
+    <string name="swap_error_amount_not_positive">Swap amount must be positive.</string>
+    <string name="swap_error_invalid_amount">Invalid swap amount.</string>
+    <string name="swap_error_account_not_found">Account information not found. Cannot perform swap.</string>
+    <string name="swap_info_initiating">Initiating swap...</string>
+    <string name="swap_success_message">Swap successful!</string>
+    <string name="swap_failed_with_reason">Swap failed: %s</string>
+    <string name="swap_error_processing_response">Error processing swap response.</string>
+    <string name="swap_error_request_failed">Swap request failed. Please try again.</string>
+
+</resources>

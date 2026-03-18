@@ -1,0 +1,42 @@
+# Sensitive Keys
+key/
+privatekey*
+BrokerHub/key/
+**/key/
+*.key
+*.pem
+
+# Logs and Databases
+log/
+*log/
+*_log/
+record/
+*.log
+*.db
+*.sqlite
+hubres_best/
+*.csv
+
+# Build Artifacts
+build/
+bin/
+broker
+client
+*.exe
+*.dll
+*.so
+*.dylib
+__pycache__/
+*.pyc
+
+# Dependencies
+node_modules/
+vendor/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
