@@ -23,9 +23,12 @@ def main():
     logger.info("Starting simulation")
     
     preprocessor = DataPreprocessor(config)
-    if not os.path.exists(os.path.join(config['raw_data_path'], 'raw_epochs.pkl')):
-        logger.info("Preprocessing raw data")
-        preprocessor.preprocess_raw_data()
+    num_epochs = config['simulation']['num_epochs']
+    # Check if we need to preprocess more data than what exists or if it doesn't exist at all
+    # For simplicity, let's just use the existing logic but pass the num_epochs
+    if not os.path.exists(os.path.join(config['raw_data_path'], 'raw_epochs_chunk_0.pkl')):
+        logger.info(f"Preprocessing raw data for {num_epochs} epochs")
+        preprocessor.preprocess_raw_data(num_epochs=num_epochs)
     logger.info(config)
     # experiment_name = "experiment_" + datetime.now().strftime("%Y%m%d_%H%M%S")
     # experiment_name = "two_brokerhubs"

@@ -198,6 +198,9 @@ class MarketSimulator:
         
         # self.logger.info(processed_history)
         
+        # Ensure directory exists
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        
         with open(output_path, 'w') as f:
             json.dump(processed_history, f, indent=2, cls=DecimalEncoder)
 

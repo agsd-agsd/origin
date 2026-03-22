@@ -187,17 +187,17 @@
   ],
   "volunteerRiskToleranceRange": [0.3, 0.7],
   "simulation": {
-    "num_epochs": 300,
+    "num_epochs": 5,
     "use_same_data": false
   },
   "output": {
     "outputPath": "./result/output",
     "logPath": "./result/logs",
-	"console_output": false
+	"console_output": true
   },
   "b2e": {
     "alpha": 1,
-    "iterNum": 300,
+    "iterNum": 5,
     "varType": "LINEAR",
     "feeRatio": 0.1
   }

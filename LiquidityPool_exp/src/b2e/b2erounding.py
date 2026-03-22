@@ -23,6 +23,7 @@ def update(new_ctxs, new_capacities, mapped_ctxs, mapped_capacities, s_x, ns_x):
     return ns_x
 
 def iter(iter_num, var_type, data, ori_ns_x):
+    start_time_all = time.time()
     ori_ctxs, ori_capacities, txsNumber = data
     k_number = len(ori_capacities)
     ori_weights_capacities = [0 for _ in ori_capacities]
@@ -32,7 +33,9 @@ def iter(iter_num, var_type, data, ori_ns_x):
             ori_weights_capacities[key[1]] += ori_ns_x[key] * ori_ctxs[key[0]][1]
     
     cpu_times = []; round_times = []
-    for _ in range(iter_num):
+    print(f"DEBUG: Starting B2E iterations. iter_num={iter_num}, limit_time={limit_time}")
+    for it_idx in range(iter_num):
+        iter_start = time.time()
         ori_weights_capacities = [0 for _ in ori_capacities]
         
         for key in ori_ns_x.keys():
@@ -76,7 +79,9 @@ def iter(iter_num, var_type, data, ori_ns_x):
             ori_ns_x = update(new_ctxs, new_capacities, mapped_ctxs, mapped_capacities, ns_x, ori_ns_x)            
         
         using_time = sum(cpu_times) + sum(round_times)
-        if value == 0.0 or using_time >= limit_time:
+        elapsed_time = time.time() - start_time_all
+        print(f"DEBUG: I{it_idx+1}/{iter_num} | Time: {elapsed_time:.2f}s | Val: {value:.2f}")
+        if value == 0.0 or elapsed_time >= limit_time:
             break
     
     if check(ori_ctxs, k_number, ori_weights_capacities, ori_capacities, ori_ns_x):     

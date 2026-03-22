@@ -17,6 +17,18 @@ record/
 hubres_best/
 *.csv
 
+# Experiment Data and Results
+LiquidityPool_exp/result/
+LiquidityPool_exp/output/
+LiquidityPool_exp/logs/
+LiquidityPool_exp/exper/*/
+*.pdf
+*.png
+*.jpg
+*.svg
+*.xls
+*.xlsx
+
 # Build Artifacts
 build/
 bin/

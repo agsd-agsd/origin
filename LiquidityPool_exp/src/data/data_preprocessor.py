@@ -3,7 +3,7 @@ import json
 import pickle
 import shutil
 from typing import List, Dict, Tuple, Generator
-from src.b2e.utils import utils
+import src.b2e.utils.utils as utils
 
 class DataPreprocessor:
     def __init__(self, config: Dict):
