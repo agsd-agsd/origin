@@ -22,12 +22,15 @@ LiquidityPool_exp/result/
 LiquidityPool_exp/output/
 LiquidityPool_exp/logs/
 LiquidityPool_exp/exper/*/
+LiquidityPool_exp/src/data/raw_data/
+LiquidityPool_exp/src/data/processed_data/
 *.pdf
 *.png
 *.jpg
 *.svg
 *.xls
 *.xlsx
+*.zip
 
 # Build Artifacts
 build/
